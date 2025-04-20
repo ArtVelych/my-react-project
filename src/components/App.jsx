@@ -8,6 +8,12 @@ import { FavBooks } from "./FavBooks";
 import { Alert1 } from "./Alert1";
 import { Alert2 } from "./Alert2";
 import { Alert3 } from "./Alert3";
+import { Alert4 } from "./Alert4";
+import { Alert5 } from "./Alert5";
+import UserMenu from "./UserMenu";
+// import { ButtonUser } from "./ButtonUser";
+import LoginButton from "./LoginButton";
+import FollowButton from "./FollowButton";
 
 // =================================================== Task 1: Product Menu ========================================== //
 // export default function App() {
@@ -188,21 +194,87 @@ import { Alert3 } from "./Alert3";
 
 // ====================================================== Task 6.1: Vanilla CSS ============================================= //
 
+// export default function App() {
+//   return (
+//     <>
+//       <Alert3 variant="info">
+//         Would you like to browse our recommended products?
+//       </Alert3>
+//       <Alert3 variant="error" outlined>
+//         There was an error during your last transaction
+//       </Alert3>
+//       <Alert3 variant="success" elevated>
+//         Payment received, thank you for your purchase
+//       </Alert3>
+//       <Alert3 variant="warning" outlined elevated>
+//         Please update your profile contact information
+//       </Alert3>
+//     </>
+//   );
+// }
+
+// ====================================================== Task 7: clsx library ============================================= //
+
+// export default function App() {
+//   return (
+//     <>
+//       <Alert4 variant="info">
+//         Would you like to browse our recommended products?
+//       </Alert4>
+//       <Alert4 variant="error" outlined>
+//         There was an error during your last transaction
+//       </Alert4>
+//       <Alert4 variant="success" elevated>
+//         Payment received, thank you for your purchase
+//       </Alert4>
+//       <Alert4 variant="warning" outlined elevated>
+//         Please update your profile contact information
+//       </Alert4>
+//     </>
+//   );
+// }
+
+// ====================================================== Task 8: CSS Modules ============================================= //
+
+// export default function App() {
+//   return (
+//     <>
+//       <Alert5 variant="info">
+//         Would you like to browse our recommended products?
+//       </Alert5>
+//       <Alert5 variant="error" outlined>
+//         There was an error during your last transaction
+//       </Alert5>
+//       <Alert5 variant="success" elevated>
+//         Payment received, thank you for your purchase
+//       </Alert5>
+//       <Alert5 variant="warning" outlined elevated>
+//         Please update your profile contact information
+//       </Alert5>
+//     </>
+//   );
+// }
+
+// ====================================================== Task 9: User with React Icons ============================================= //
+
+// export default function App() {
+//   return (
+//     <div>
+//       <h1>User Profile</h1>
+//       <UserMenu name="Harrison Wells" />
+//     </div>
+//   );
+// }
+
+// ====================================================== Task 10: User + Buttons ============================================= //
+
 export default function App() {
   return (
-    <>
-      <Alert3 variant="info">
-        Would you like to browse our recommended products?
-      </Alert3>
-      <Alert3 variant="error" outlined>
-        There was an error during your last transaction
-      </Alert3>
-      <Alert3 variant="success" elevated>
-        Payment received, thank you for your purchase
-      </Alert3>
-      <Alert3 variant="warning" outlined elevated>
-        Please update your profile contact information
-      </Alert3>
-    </>
+    <div>
+      <h1>User Profile</h1>
+      <UserMenu name="Harrison Wells" />
+      <FollowButton />
+      <LoginButton />
+    </div>
   );
 }
